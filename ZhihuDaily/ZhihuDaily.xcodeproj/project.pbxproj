@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412FD993806D89E93EBB4BF2 /* libPods-ZhihuDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2194975313C620CA0AB0702E /* libPods-ZhihuDaily.a */; };
 		F01C8B5C201866CC00F3038B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F01C8B5B201866CC00F3038B /* AppDelegate.m */; };
 		F01C8B5F201866CC00F3038B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F01C8B5E201866CC00F3038B /* ViewController.m */; };
 		F01C8B62201866CC00F3038B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01C8B60201866CC00F3038B /* Main.storyboard */; };
@@ -16,6 +17,10 @@
 		F01C8B6D201866CC00F3038B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F01C8B6C201866CC00F3038B /* main.m */; };
 		F01C8B77201866CD00F3038B /* ZhihuDailyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F01C8B76201866CD00F3038B /* ZhihuDailyTests.m */; };
 		F01C8B82201866CD00F3038B /* ZhihuDailyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F01C8B81201866CD00F3038B /* ZhihuDailyUITests.m */; };
+		F03990AD2061041C00728E7A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F039909E2061041C00728E7A /* UIView+Extension.m */; };
+		F03990AE2061041C00728E7A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F03990A32061041C00728E7A /* MBProgressHUD.m */; };
+		F03990AF2061041C00728E7A /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F03990A62061041C00728E7A /* MBProgressHUD+MJ.m */; };
+		F03990B02061041C00728E7A /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F03990A72061041C00728E7A /* MBProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2194975313C620CA0AB0702E /* libPods-ZhihuDaily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhihuDaily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3184DE0D4F217EEBA89957B1 /* Pods-ZhihuDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhihuDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily.debug.xcconfig"; sourceTree = "<group>"; };
 		F01C8B57201866CC00F3038B /* ZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01C8B5A201866CC00F3038B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F01C8B5B201866CC00F3038B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +60,15 @@
 		F01C8B7D201866CD00F3038B /* ZhihuDailyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhihuDailyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01C8B81201866CD00F3038B /* ZhihuDailyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhihuDailyUITests.m; sourceTree = "<group>"; };
 		F01C8B83201866CD00F3038B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F039909C2061041C00728E7A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		F039909D2061041C00728E7A /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		F039909E2061041C00728E7A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		F03990A32061041C00728E7A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F03990A42061041C00728E7A /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		F03990A52061041C00728E7A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F03990A62061041C00728E7A /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		F03990A72061041C00728E7A /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		F796EDF8B5E1F54011A232E7 /* Pods-ZhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhihuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412FD993806D89E93EBB4BF2 /* libPods-ZhihuDaily.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA1665550ACBCE23794AD8A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3184DE0D4F217EEBA89957B1 /* Pods-ZhihuDaily.debug.xcconfig */,
+				F796EDF8B5E1F54011A232E7 /* Pods-ZhihuDaily.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F01C8B4E201866CC00F3038B = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +113,8 @@
 				F01C8B75201866CD00F3038B /* ZhihuDailyTests */,
 				F01C8B80201866CD00F3038B /* ZhihuDailyUITests */,
 				F01C8B58201866CC00F3038B /* Products */,
+				EA1665550ACBCE23794AD8A5 /* Pods */,
+				F9D1DF0CE83182445B00907C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +131,7 @@
 		F01C8B59201866CC00F3038B /* ZhihuDaily */ = {
 			isa = PBXGroup;
 			children = (
+				F03990832061041C00728E7A /* Classes */,
 				F01C8B5A201866CC00F3038B /* AppDelegate.h */,
 				F01C8B5B201866CC00F3038B /* AppDelegate.m */,
 				F01C8B5D201866CC00F3038B /* ViewController.h */,
@@ -135,6 +164,293 @@
 			path = ZhihuDailyUITests;
 			sourceTree = "<group>";
 		};
+		F03990832061041C00728E7A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F03990842061041C00728E7A /* LeftSideDrawer */,
+				F03990892061041C00728E7A /* ThemePage */,
+				F039908E2061041C00728E7A /* HomePage */,
+				F03990932061041C00728E7A /* DetailNewsInfo */,
+				F03990982061041C00728E7A /* Other */,
+				F03990A82061041C00728E7A /* Login */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F03990842061041C00728E7A /* LeftSideDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				F03990852061041C00728E7A /* Utils */,
+				F03990862061041C00728E7A /* Controller */,
+				F03990872061041C00728E7A /* Model */,
+				F03990882061041C00728E7A /* View */,
+			);
+			path = LeftSideDrawer;
+			sourceTree = "<group>";
+		};
+		F03990852061041C00728E7A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F03990862061041C00728E7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F03990872061041C00728E7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F03990882061041C00728E7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F03990892061041C00728E7A /* ThemePage */ = {
+			isa = PBXGroup;
+			children = (
+				F039908A2061041C00728E7A /* Utils */,
+				F039908B2061041C00728E7A /* Controller */,
+				F039908C2061041C00728E7A /* Model */,
+				F039908D2061041C00728E7A /* View */,
+			);
+			path = ThemePage;
+			sourceTree = "<group>";
+		};
+		F039908A2061041C00728E7A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F039908B2061041C00728E7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F039908C2061041C00728E7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F039908D2061041C00728E7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F039908E2061041C00728E7A /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				F039908F2061041C00728E7A /* Utils */,
+				F03990902061041C00728E7A /* Controller */,
+				F03990912061041C00728E7A /* Model */,
+				F03990922061041C00728E7A /* View */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		F039908F2061041C00728E7A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F03990902061041C00728E7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F03990912061041C00728E7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F03990922061041C00728E7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F03990932061041C00728E7A /* DetailNewsInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F03990942061041C00728E7A /* Utils */,
+				F03990952061041C00728E7A /* Controller */,
+				F03990962061041C00728E7A /* Model */,
+				F03990972061041C00728E7A /* View */,
+			);
+			path = DetailNewsInfo;
+			sourceTree = "<group>";
+		};
+		F03990942061041C00728E7A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F03990952061041C00728E7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F03990962061041C00728E7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F03990972061041C00728E7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F03990982061041C00728E7A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F03990992061041C00728E7A /* LauncherPages */,
+				F039909A2061041C00728E7A /* Category */,
+				F039909B2061041C00728E7A /* Common */,
+				F039909F2061041C00728E7A /* DrawerController */,
+				F03990A02061041C00728E7A /* Tool */,
+				F03990A12061041C00728E7A /* Vender */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F03990992061041C00728E7A /* LauncherPages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LauncherPages;
+			sourceTree = "<group>";
+		};
+		F039909A2061041C00728E7A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F039909B2061041C00728E7A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F039909C2061041C00728E7A /* UIView+Extension.h */,
+				F039909D2061041C00728E7A /* Common.h */,
+				F039909E2061041C00728E7A /* UIView+Extension.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F039909F2061041C00728E7A /* DrawerController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DrawerController;
+			sourceTree = "<group>";
+		};
+		F03990A02061041C00728E7A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F03990A12061041C00728E7A /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				F03990A22061041C00728E7A /* HUD */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		F03990A22061041C00728E7A /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				F03990A32061041C00728E7A /* MBProgressHUD.m */,
+				F03990A42061041C00728E7A /* MBProgressHUD+MJ.h */,
+				F03990A52061041C00728E7A /* MBProgressHUD.h */,
+				F03990A62061041C00728E7A /* MBProgressHUD+MJ.m */,
+				F03990A72061041C00728E7A /* MBProgressHUD.bundle */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		F03990A82061041C00728E7A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F03990A92061041C00728E7A /* Utils */,
+				F03990AA2061041C00728E7A /* Controller */,
+				F03990AB2061041C00728E7A /* Model */,
+				F03990AC2061041C00728E7A /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F03990A92061041C00728E7A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F03990AA2061041C00728E7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F03990AB2061041C00728E7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F03990AC2061041C00728E7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9D1DF0CE83182445B00907C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2194975313C620CA0AB0702E /* libPods-ZhihuDaily.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +458,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F01C8B86201866CD00F3038B /* Build configuration list for PBXNativeTarget "ZhihuDaily" */;
 			buildPhases = (
+				6A572A2BD0F9F68383926A5B /* [CP] Check Pods Manifest.lock */,
 				F01C8B53201866CC00F3038B /* Sources */,
 				F01C8B54201866CC00F3038B /* Frameworks */,
 				F01C8B55201866CC00F3038B /* Resources */,
+				3963E71E4D0389FE39E19320 /* [CP] Embed Pods Frameworks */,
+				8251FA6ABF2D5F6AA51B702B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F01C8B6A201866CC00F3038B /* LaunchScreen.storyboard in Resources */,
+				F03990B02061041C00728E7A /* MBProgressHUD.bundle in Resources */,
 				F01C8B67201866CC00F3038B /* Assets.xcassets in Resources */,
 				F01C8B62201866CC00F3038B /* Main.storyboard in Resources */,
 			);
@@ -263,13 +583,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3963E71E4D0389FE39E19320 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A572A2BD0F9F68383926A5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZhihuDaily-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8251FA6ABF2D5F6AA51B702B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F01C8B53201866CC00F3038B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03990AD2061041C00728E7A /* UIView+Extension.m in Sources */,
+				F03990AE2061041C00728E7A /* MBProgressHUD.m in Sources */,
 				F01C8B5F201866CC00F3038B /* ViewController.m in Sources */,
 				F01C8B5C201866CC00F3038B /* AppDelegate.m in Sources */,
+				F03990AF2061041C00728E7A /* MBProgressHUD+MJ.m in Sources */,
 				F01C8B6D201866CC00F3038B /* main.m in Sources */,
 				F01C8B65201866CC00F3038B /* ZhihuDaily.xcdatamodeld in Sources */,
 			);
@@ -432,6 +806,7 @@
 		};
 		F01C8B87201866CD00F3038B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3184DE0D4F217EEBA89957B1 /* Pods-ZhihuDaily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +822,7 @@
 		};
 		F01C8B88201866CD00F3038B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F796EDF8B5E1F54011A232E7 /* Pods-ZhihuDaily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
