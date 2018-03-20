@@ -1,0 +1,14 @@
+
+platform :ios, '9.0'
+
+target "ZhihuDaily" do
+
+pod 'AFNetworking'
+pod 'Masonry'
+pod 'MJExtension'
+pod 'SDWebImage'
+pod 'MMDrawerController'
+
+
+
+end
