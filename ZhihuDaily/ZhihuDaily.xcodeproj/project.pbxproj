@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		412FD993806D89E93EBB4BF2 /* libPods-ZhihuDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2194975313C620CA0AB0702E /* libPods-ZhihuDaily.a */; };
 		F01C8B5C201866CC00F3038B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F01C8B5B201866CC00F3038B /* AppDelegate.m */; };
-		F01C8B5F201866CC00F3038B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F01C8B5E201866CC00F3038B /* ViewController.m */; };
 		F01C8B62201866CC00F3038B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01C8B60201866CC00F3038B /* Main.storyboard */; };
 		F01C8B65201866CC00F3038B /* ZhihuDaily.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F01C8B63201866CC00F3038B /* ZhihuDaily.xcdatamodeld */; };
 		F01C8B67201866CC00F3038B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01C8B66201866CC00F3038B /* Assets.xcassets */; };
@@ -21,6 +20,13 @@
 		F03990AE2061041C00728E7A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F03990A32061041C00728E7A /* MBProgressHUD.m */; };
 		F03990AF2061041C00728E7A /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F03990A62061041C00728E7A /* MBProgressHUD+MJ.m */; };
 		F03990B02061041C00728E7A /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F03990A72061041C00728E7A /* MBProgressHUD.bundle */; };
+		F0AB1BFA2061EC7C0016A8AE /* ZHMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1BF92061EC7C0016A8AE /* ZHMainController.m */; };
+		F0AB1BFD2061EFC30016A8AE /* ZHHomePagecController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1BFC2061EFC30016A8AE /* ZHHomePagecController.m */; };
+		F0AB1C012061F4630016A8AE /* ZHLeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1BFF2061F4630016A8AE /* ZHLeftController.m */; };
+		F0AB1C022061F4630016A8AE /* ZHLeftController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0AB1C002061F4630016A8AE /* ZHLeftController.xib */; };
+		F0AB1C062061FE370016A8AE /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1C042061FE370016A8AE /* CommonUtils.m */; };
+		F0AB1C0C20620C890016A8AE /* UPSHttpNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1C0A20620C880016A8AE /* UPSHttpNetWorkTool.m */; };
+		F0AB1C0E20620CB60016A8AE /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1C0D20620CB60016A8AE /* NullSafe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +52,6 @@
 		F01C8B57201866CC00F3038B /* ZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01C8B5A201866CC00F3038B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F01C8B5B201866CC00F3038B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F01C8B5D201866CC00F3038B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F01C8B5E201866CC00F3038B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F01C8B61201866CC00F3038B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F01C8B64201866CC00F3038B /* ZhihuDaily.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZhihuDaily.xcdatamodel; sourceTree = "<group>"; };
 		F01C8B66201866CC00F3038B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,13 +65,26 @@
 		F01C8B81201866CD00F3038B /* ZhihuDailyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhihuDailyUITests.m; sourceTree = "<group>"; };
 		F01C8B83201866CD00F3038B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F039909C2061041C00728E7A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		F039909D2061041C00728E7A /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		F039909E2061041C00728E7A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		F03990A32061041C00728E7A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		F03990A42061041C00728E7A /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		F03990A52061041C00728E7A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		F03990A62061041C00728E7A /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		F03990A72061041C00728E7A /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		F0AB1BF82061EC7C0016A8AE /* ZHMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMainController.h; sourceTree = "<group>"; };
+		F0AB1BF92061EC7C0016A8AE /* ZHMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMainController.m; sourceTree = "<group>"; };
+		F0AB1BFB2061EFC30016A8AE /* ZHHomePagecController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHHomePagecController.h; sourceTree = "<group>"; };
+		F0AB1BFC2061EFC30016A8AE /* ZHHomePagecController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHHomePagecController.m; sourceTree = "<group>"; };
+		F0AB1BFE2061F4630016A8AE /* ZHLeftController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLeftController.h; sourceTree = "<group>"; };
+		F0AB1BFF2061F4630016A8AE /* ZHLeftController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLeftController.m; sourceTree = "<group>"; };
+		F0AB1C002061F4630016A8AE /* ZHLeftController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHLeftController.xib; sourceTree = "<group>"; };
+		F0AB1C032061FC030016A8AE /* MacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefine.h; sourceTree = "<group>"; };
+		F0AB1C042061FE370016A8AE /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
+		F0AB1C052061FE370016A8AE /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
+		F0AB1C0A20620C880016A8AE /* UPSHttpNetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPSHttpNetWorkTool.m; sourceTree = "<group>"; };
+		F0AB1C0B20620C890016A8AE /* UPSHttpNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPSHttpNetWorkTool.h; sourceTree = "<group>"; };
+		F0AB1C0D20620CB60016A8AE /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
+		F0AB1C0F20620E2F0016A8AE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F796EDF8B5E1F54011A232E7 /* Pods-ZhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhihuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,10 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				F03990832061041C00728E7A /* Classes */,
+				F0AB1C0F20620E2F0016A8AE /* PrefixHeader.pch */,
 				F01C8B5A201866CC00F3038B /* AppDelegate.h */,
 				F01C8B5B201866CC00F3038B /* AppDelegate.m */,
-				F01C8B5D201866CC00F3038B /* ViewController.h */,
-				F01C8B5E201866CC00F3038B /* ViewController.m */,
 				F01C8B60201866CC00F3038B /* Main.storyboard */,
 				F01C8B66201866CC00F3038B /* Assets.xcassets */,
 				F01C8B68201866CC00F3038B /* LaunchScreen.storyboard */,
@@ -198,6 +214,9 @@
 		F03990862061041C00728E7A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F0AB1BFE2061F4630016A8AE /* ZHLeftController.h */,
+				F0AB1BFF2061F4630016A8AE /* ZHLeftController.m */,
+				F0AB1C002061F4630016A8AE /* ZHLeftController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +295,8 @@
 		F03990902061041C00728E7A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F0AB1BFB2061EFC30016A8AE /* ZHHomePagecController.h */,
+				F0AB1BFC2061EFC30016A8AE /* ZHHomePagecController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -363,9 +384,11 @@
 		F039909B2061041C00728E7A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F0AB1C032061FC030016A8AE /* MacroDefine.h */,
 				F039909C2061041C00728E7A /* UIView+Extension.h */,
-				F039909D2061041C00728E7A /* Common.h */,
 				F039909E2061041C00728E7A /* UIView+Extension.m */,
+				F0AB1C052061FE370016A8AE /* CommonUtils.h */,
+				F0AB1C042061FE370016A8AE /* CommonUtils.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -373,6 +396,8 @@
 		F039909F2061041C00728E7A /* DrawerController */ = {
 			isa = PBXGroup;
 			children = (
+				F0AB1BF82061EC7C0016A8AE /* ZHMainController.h */,
+				F0AB1BF92061EC7C0016A8AE /* ZHMainController.m */,
 			);
 			path = DrawerController;
 			sourceTree = "<group>";
@@ -380,6 +405,9 @@
 		F03990A02061041C00728E7A /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				F0AB1C0B20620C890016A8AE /* UPSHttpNetWorkTool.h */,
+				F0AB1C0A20620C880016A8AE /* UPSHttpNetWorkTool.m */,
+				F0AB1C0D20620CB60016A8AE /* NullSafe.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -516,6 +544,7 @@
 		F01C8B4F201866CC00F3038B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZH;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = hjun;
 				TargetAttributes = {
@@ -560,6 +589,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0AB1C022061F4630016A8AE /* ZHLeftController.xib in Resources */,
 				F01C8B6A201866CC00F3038B /* LaunchScreen.storyboard in Resources */,
 				F03990B02061041C00728E7A /* MBProgressHUD.bundle in Resources */,
 				F01C8B67201866CC00F3038B /* Assets.xcassets in Resources */,
@@ -640,12 +670,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F03990AD2061041C00728E7A /* UIView+Extension.m in Sources */,
+				F0AB1C012061F4630016A8AE /* ZHLeftController.m in Sources */,
+				F0AB1BFD2061EFC30016A8AE /* ZHHomePagecController.m in Sources */,
 				F03990AE2061041C00728E7A /* MBProgressHUD.m in Sources */,
-				F01C8B5F201866CC00F3038B /* ViewController.m in Sources */,
 				F01C8B5C201866CC00F3038B /* AppDelegate.m in Sources */,
 				F03990AF2061041C00728E7A /* MBProgressHUD+MJ.m in Sources */,
+				F0AB1C0C20620C890016A8AE /* UPSHttpNetWorkTool.m in Sources */,
+				F0AB1C062061FE370016A8AE /* CommonUtils.m in Sources */,
+				F0AB1BFA2061EC7C0016A8AE /* ZHMainController.m in Sources */,
 				F01C8B6D201866CC00F3038B /* main.m in Sources */,
 				F01C8B65201866CC00F3038B /* ZhihuDaily.xcdatamodeld in Sources */,
+				F0AB1C0E20620CB60016A8AE /* NullSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,6 +846,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A2N8A4ABC3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/hjun/Desktop/知乎日报/ZhihuDaily/ZhihuDaily/PrefixHeader.pch";
 				INFOPLIST_FILE = ZhihuDaily/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -827,6 +864,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A2N8A4ABC3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/hjun/Desktop/知乎日报/ZhihuDaily/ZhihuDaily/PrefixHeader.pch";
 				INFOPLIST_FILE = ZhihuDaily/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
