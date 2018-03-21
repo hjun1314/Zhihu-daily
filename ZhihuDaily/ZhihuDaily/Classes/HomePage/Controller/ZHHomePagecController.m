@@ -7,18 +7,46 @@
 //
 
 #import "ZHHomePagecController.h"
-
-@interface ZHHomePagecController ()
+#import <SDCycleScrollView.h>
+@interface ZHHomePagecController ()<SDCycleScrollViewDelegate>
+@property (nonatomic,strong)UITableView *tableView;
+@property (nonatomic,strong)UIView *wheelView;
 
 @end
 
 @implementation ZHHomePagecController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+#pragma mark -- 懒加载
+
+- (UITableView *)tableView{
+    
+    if (_tableView == nil) {
+        
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT - 20) style:UITableViewStylePlain];
+        _tableView.backgroundColor = [UIColor grayColor];
+        _tableView.showsVerticalScrollIndicator = NO;
+
+    }
+    return _tableView;
 }
 
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self.view addSubview:self.tableView];
+    [self loadSdcycleView];
+}
+#pragma mark- 加载轮播图
+- (void)loadSdcycleView{
+    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame: CGRectMake(0, 0, SCREEN_WIDTH, 200) delegate:self placeholderImage:[UIImage imageNamed:@""]];
+    cycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
+    cycleScrollView.currentPageDotColor = [UIColor whiteColor];
+    self.tableView.tableHeaderView = cycleScrollView;
+
+   
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

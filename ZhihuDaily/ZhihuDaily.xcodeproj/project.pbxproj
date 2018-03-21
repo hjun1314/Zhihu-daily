@@ -20,6 +20,9 @@
 		F03990AE2061041C00728E7A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F03990A32061041C00728E7A /* MBProgressHUD.m */; };
 		F03990AF2061041C00728E7A /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F03990A62061041C00728E7A /* MBProgressHUD+MJ.m */; };
 		F03990B02061041C00728E7A /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F03990A72061041C00728E7A /* MBProgressHUD.bundle */; };
+		F08751EA2062367E005BB9C2 /* UIWindow+ZHExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = F08751E92062367E005BB9C2 /* UIWindow+ZHExpand.m */; };
+		F08751ED206236F3005BB9C2 /* ZHLaunchController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08751EC206236F3005BB9C2 /* ZHLaunchController.m */; };
+		F08751F020623829005BB9C2 /* ZHLanchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F08751EF20623829005BB9C2 /* ZHLanchImage.m */; };
 		F0AB1BFA2061EC7C0016A8AE /* ZHMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1BF92061EC7C0016A8AE /* ZHMainController.m */; };
 		F0AB1BFD2061EFC30016A8AE /* ZHHomePagecController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1BFC2061EFC30016A8AE /* ZHHomePagecController.m */; };
 		F0AB1C012061F4630016A8AE /* ZHLeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1BFF2061F4630016A8AE /* ZHLeftController.m */; };
@@ -71,6 +74,12 @@
 		F03990A52061041C00728E7A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		F03990A62061041C00728E7A /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		F03990A72061041C00728E7A /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		F08751E82062367E005BB9C2 /* UIWindow+ZHExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+ZHExpand.h"; sourceTree = "<group>"; };
+		F08751E92062367E005BB9C2 /* UIWindow+ZHExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+ZHExpand.m"; sourceTree = "<group>"; };
+		F08751EB206236F3005BB9C2 /* ZHLaunchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLaunchController.h; sourceTree = "<group>"; };
+		F08751EC206236F3005BB9C2 /* ZHLaunchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLaunchController.m; sourceTree = "<group>"; };
+		F08751EE20623829005BB9C2 /* ZHLanchImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLanchImage.h; sourceTree = "<group>"; };
+		F08751EF20623829005BB9C2 /* ZHLanchImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLanchImage.m; sourceTree = "<group>"; };
 		F0AB1BF82061EC7C0016A8AE /* ZHMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMainController.h; sourceTree = "<group>"; };
 		F0AB1BF92061EC7C0016A8AE /* ZHMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMainController.m; sourceTree = "<group>"; };
 		F0AB1BFB2061EFC30016A8AE /* ZHHomePagecController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHHomePagecController.h; sourceTree = "<group>"; };
@@ -370,6 +379,10 @@
 		F03990992061041C00728E7A /* LauncherPages */ = {
 			isa = PBXGroup;
 			children = (
+				F08751EB206236F3005BB9C2 /* ZHLaunchController.h */,
+				F08751EC206236F3005BB9C2 /* ZHLaunchController.m */,
+				F08751EE20623829005BB9C2 /* ZHLanchImage.h */,
+				F08751EF20623829005BB9C2 /* ZHLanchImage.m */,
 			);
 			path = LauncherPages;
 			sourceTree = "<group>";
@@ -377,6 +390,8 @@
 		F039909A2061041C00728E7A /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F08751E82062367E005BB9C2 /* UIWindow+ZHExpand.h */,
+				F08751E92062367E005BB9C2 /* UIWindow+ZHExpand.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -671,9 +686,12 @@
 			files = (
 				F03990AD2061041C00728E7A /* UIView+Extension.m in Sources */,
 				F0AB1C012061F4630016A8AE /* ZHLeftController.m in Sources */,
+				F08751EA2062367E005BB9C2 /* UIWindow+ZHExpand.m in Sources */,
 				F0AB1BFD2061EFC30016A8AE /* ZHHomePagecController.m in Sources */,
 				F03990AE2061041C00728E7A /* MBProgressHUD.m in Sources */,
 				F01C8B5C201866CC00F3038B /* AppDelegate.m in Sources */,
+				F08751F020623829005BB9C2 /* ZHLanchImage.m in Sources */,
+				F08751ED206236F3005BB9C2 /* ZHLaunchController.m in Sources */,
 				F03990AF2061041C00728E7A /* MBProgressHUD+MJ.m in Sources */,
 				F0AB1C0C20620C890016A8AE /* UPSHttpNetWorkTool.m in Sources */,
 				F0AB1C062061FE370016A8AE /* CommonUtils.m in Sources */,
@@ -844,6 +862,7 @@
 			baseConfigurationReference = 3184DE0D4F217EEBA89957B1 /* Pods-ZhihuDaily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A2N8A4ABC3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -862,6 +881,7 @@
 			baseConfigurationReference = F796EDF8B5E1F54011A232E7 /* Pods-ZhihuDaily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A2N8A4ABC3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

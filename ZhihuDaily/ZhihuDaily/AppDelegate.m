@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZHMainController.h"
+#import "UIWindow+ZHExpand.h"
 @interface AppDelegate ()
 
 @end
@@ -21,6 +22,7 @@
     ZHMainController *mainVC = [[ZHMainController alloc]init];
     self.window.rootViewController = mainVC;
     [self.window makeKeyAndVisible];
+    [self.window showLanuchPageAndSetUmeng];
     
     return YES;
 }

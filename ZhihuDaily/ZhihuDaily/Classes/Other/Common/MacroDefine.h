@@ -61,6 +61,8 @@
 //比例宽和高(以6s为除数)
 #define kActureHeight(height)  roundf(height/375.0 * SCREEN_WIDTH)
 #define kActureWidth(Width)  roundf(Width/812.0 * SCREEN_HEIGHT)
+#define kWidth(R) (R)*(SCREEN_WIDTH)/320
+#define kHeight(R) (iPhone4?((R)*(SCREEN_HEIGHT)/480):((R)*(SCREEN_HEIGHT)/568))
 //状态栏的高度
 #define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 //导航栏的高度
