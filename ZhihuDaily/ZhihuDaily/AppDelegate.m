@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ZHMainController.h"
+//#import "ZHMainController.h"
 #import "UIWindow+ZHExpand.h"
 @interface AppDelegate ()
 
@@ -19,8 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    ZHMainController *mainVC = [[ZHMainController alloc]init];
-    self.window.rootViewController = mainVC;
+   self.main = [[ZHMainController alloc]init];
+    self.window.rootViewController = self.main;
     [self.window makeKeyAndVisible];
     [self.window showLanuchPageAndSetUmeng];
     

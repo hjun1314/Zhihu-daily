@@ -11,6 +11,8 @@
 #import "ZHThemeModel.h"
 #import "ZHThemeTool.h"
 #import "ZHLoginController.h"
+#import "ZHThemeController.h"
+#import "ZHMainController.h"
 static NSString * const leftCell = @"leftCell";
 
 @interface ZHLeftController ()<UITableViewDelegate,UITableViewDataSource>
@@ -19,6 +21,9 @@ static NSString * const leftCell = @"leftCell";
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) NSMutableArray *themes;
+@property (nonatomic,strong)UINavigationController *nav;
+@property (nonatomic,strong)ZHThemeController *themeVC;
+
 
 
 @end
@@ -27,6 +32,11 @@ static NSString * const leftCell = @"leftCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (@available(iOS 11.0, *)) {
+        _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.rowHeight = 50;
@@ -50,6 +60,15 @@ static NSString * const leftCell = @"leftCell";
     cell.textLabel.text = model.name;
     return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        [self.mainVC setCenterViewController:self.mainVC.nav withCloseAnimation:YES completion:nil];
+    }else{
+        [self.mainVC setCenterViewController:self.nav withCloseAnimation:YES completion:nil];
+    }
+    
+}
+#pragma mark- 登录和夜间按钮点击
 - (IBAction)didLoginBtn:(id)sender {
     ZHLoginController *loginVC = [[ZHLoginController alloc]init];
     [self presentViewController:loginVC animated:YES completion:nil];
@@ -62,12 +81,24 @@ static NSString * const leftCell = @"leftCell";
     if (_themes == nil) {
         _themes = [NSMutableArray array];
         ZHThemeModel *theme = [[ZHThemeModel alloc] init];
-       theme.name =  @"首页";
+         theme.name =  @"首页";
         [_themes addObject:theme];
     }
     return _themes;
 }
-
+- (UINavigationController *)nav{
+    if (_nav == nil) {
+        _nav = [[UINavigationController alloc]initWithRootViewController:self.themeVC];
+        _nav.navigationBar.hidden = YES;
+    }
+    return _nav;
+}
+- (ZHThemeController *)themeVC{
+    if (_themeVC == nil) {
+        _themeVC = [[ZHThemeController alloc]init];
+    }
+    return _themeVC;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 

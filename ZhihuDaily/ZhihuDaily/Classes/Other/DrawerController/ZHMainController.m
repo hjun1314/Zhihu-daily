@@ -18,8 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     ///设置状态栏字体颜色为白色
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     ZHHomePagecController *homePageVC = [[ZHHomePagecController alloc]init];
+    homePageVC.view.backgroundColor = [UIColor whiteColor];
     
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:homePageVC];
     self.nav = nav;
