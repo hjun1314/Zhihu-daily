@@ -13,6 +13,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZHLeftController">
             <connections>
+                <outlet property="loginBtn" destination="MJ6-mf-EO8" id="JXq-p4-gnS"/>
+                <outlet property="nightBtn" destination="mY4-qN-qbL" id="Xli-2B-oZH"/>
+                <outlet property="tableView" destination="cUt-eJ-3u1" id="jm2-yS-TC2"/>
                 <outlet property="view" destination="eZ6-8R-8aX" id="ojT-nA-BTD"/>
             </connections>
         </placeholder>
@@ -32,6 +35,9 @@
                     <state key="normal" title="请登录" image="Menu_Avatar">
                         <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didLoginBtn:" destination="-1" eventType="touchUpInside" id="zpp-z1-q7j"/>
+                    </connections>
                 </button>
                 <button contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cto-hK-7Gv">
                     <rect key="frame" x="0.0" y="74" width="70" height="44"/>
@@ -93,6 +99,9 @@
                         <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <state key="selected" title="白天" image="Menu_Day"/>
+                    <connections>
+                        <action selector="didNightBtn:" destination="-1" eventType="touchUpInside" id="m7i-gx-fTk"/>
+                    </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cUt-eJ-3u1">
                     <rect key="frame" x="0.0" y="118" width="220" height="495"/>
