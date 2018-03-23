@@ -10,6 +10,7 @@
 #import "UPSHttpNetWorkTool.h"
 #import "MJExtension.h"
 #import "ZHStoryModel.h"
+#import "ZHTopStoryModel.h"
 @interface ZHStoryModelTool()
 @property (nonatomic,strong)NSMutableArray *items;
 
@@ -18,9 +19,9 @@
 @implementation ZHStoryModelTool
 - (void)loadNewStoriesWithCallBack:(CallBack)callBack{
     [[UPSHttpNetWorkTool sharedApi]GET:@"http://news-at.zhihu.com/api/4/news/latest" params:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        SectionModel *sectionM = [SectionModel mj_objectWithKeyValues:responseObject];
-        [self.items addObject:sectionM];
-        
+//        SectionModel *sectionM = [SectionModel mj_objectWithKeyValues:responseObject];
+//        [self.items addObject:sectionM];
+        callBack(_items);
         
     } fail:^(NSURLSessionDataTask *task, NSError *error) {
         

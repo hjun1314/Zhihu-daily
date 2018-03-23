@@ -13,8 +13,10 @@
 #import "ZHStoryModel.h"
 #import "AppDelegate.h"
 #import "MMDrawerController.h"
-
-@interface ZHHomePagecController ()<SDCycleScrollViewDelegate>
+#import "ZHTopStoryModel.h"
+#import "ZHHomePageCell.h"
+#import "UIImageView+WebCache.h"
+@interface ZHHomePagecController ()<SDCycleScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)UIView *wheelView;
 @property (nonatomic,strong)UILabel *titleLabel;
@@ -23,15 +25,9 @@
 
 @property (nonatomic,strong)NSMutableArray *items;
 
-
-
-
 @end
 
 @implementation ZHHomePagecController
-
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,46 +41,87 @@
     [self.view addSubview:self.titleLabel];
     [self.view addSubview:self.leftBtn];
     [self loadSDcycleViewData];
-    [self loadSdcycleView];
 }
 - (void)loadSDcycleViewData{
     [[UPSHttpNetWorkTool sharedApi]GET:@"http://news-at.zhihu.com/api/4/news/latest" params:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        SectionModel *sectionM = [SectionModel mj_objectWithKeyValues:responseObject];
-        [self.items addObject:sectionM];
-        
-        
+        NSMutableArray *topArr = responseObject[@"top_stories"];
+        NSMutableArray *topData = [NSMutableArray array];
+        NSMutableArray *themeArr = [NSMutableArray array];
+        for (int i = 0; i < topArr.count; i++) {
+            ZHTopStoryModel *model = [ZHTopStoryModel mj_objectWithKeyValues:topArr[i]];
+            [topData addObject:model.image];
+            [themeArr addObject:model.title];
+        }
+        NSMutableArray *storyArr = responseObject[@"stories"];
+        NSMutableArray *storyData = [NSMutableArray array];
+        for (int i = 0 ; i < storyArr.count; i++) {
+            ZHStoryModel *model = [ZHStoryModel mj_objectWithKeyValues:storyArr[i]];
+            [storyData addObject:model];
+        }
+        self.items = storyData;
+        [self loadSdcycleViewImageArr:topData andTitleLabelArr:themeArr];
+        [self.tableView reloadData];
     } fail:^(NSURLSessionDataTask *task, NSError *error) {
         
     }];
 }
 #pragma mark- 加载轮播图
-- (void)loadSdcycleView{
-    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame: CGRectMake(0, 0, SCREEN_WIDTH, 200) delegate:self placeholderImage:[UIImage imageNamed:@"Comment_Share_Sina"]];
+- (void)loadSdcycleViewImageArr:(NSMutableArray *)imageArr andTitleLabelArr:(NSMutableArray *)titleLabelArr{
+    
+    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame: CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT *0.3) delegate:self placeholderImage:[UIImage imageNamed:@"Comment_Share_Sina"]];
     cycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
-    cycleScrollView.localizationImageNamesGroup = @[@"Comment_Share_Sina_Cancel_Highlight",@"Comment_Share_Sina_Cancel",@"Comment_Share_Sina_Highlight"];
+    
+    cycleScrollView.localizationImageNamesGroup = imageArr;
     cycleScrollView.currentPageDotColor = [UIColor whiteColor];
-    
+    cycleScrollView.titleLabelHeight = 80;
+    cycleScrollView.titleLabelTextFont = [UIFont systemFontOfSize:16];
+    cycleScrollView.titleLabelTextColor = [UIColor whiteColor];
+    cycleScrollView.titleLabelBackgroundColor = [UIColor clearColor];
+    cycleScrollView.titleLabelTextAlignment = NSTextAlignmentLeft;
+    cycleScrollView.titlesGroup = titleLabelArr;
     self.tableView.tableHeaderView = cycleScrollView;
-
-   
     
+    
+}
+#pragma mark- tableViewDelegate&DataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.items.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ZHHomePageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeCell"];
+    if (cell == nil) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"ZHHomePageCell" owner:nil options:nil]lastObject];
+    }
+    ZHStoryModel *model = self.items[indexPath.row];
+    cell.titleLabel.text = model.title;
+    NSURL *url = [NSURL URLWithString:model.images[0]];
+    [cell.iconView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"News_Avatar"]];
+    cell.homeView.hidden = !model.isMutipic;
+    
+    return cell;
+}
+#pragma mark - SDCycleScrollViewDelegate
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
+    
+    DLog(@"%ld",index);
 }
 #pragma mark 左侧按钮点击
 - (void)clickLeftBtn{
     AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
- [app.main toggleDrawerSide:MMDrawerSideLeft
-animated:YES
-completion:nil];
+    [app.main toggleDrawerSide:MMDrawerSideLeft
+                      animated:YES
+                    completion:nil];
 }
 #pragma mark -- 懒加载
 
 - (UITableView *)tableView{
     
     if (_tableView == nil) {
-        
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT - 20) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, -kStatusBarHeight, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
         _tableView.showsVerticalScrollIndicator = NO;
-        
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.rowHeight = 100;
     }
     return _tableView;
 }

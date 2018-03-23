@@ -38,6 +38,10 @@
 		F0AB1C062061FE370016A8AE /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1C042061FE370016A8AE /* CommonUtils.m */; };
 		F0AB1C0C20620C890016A8AE /* UPSHttpNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1C0A20620C880016A8AE /* UPSHttpNetWorkTool.m */; };
 		F0AB1C0E20620CB60016A8AE /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1C0D20620CB60016A8AE /* NullSafe.m */; };
+		F0E6A7AE2064908200820887 /* ZHCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6A7AD2064908200820887 /* ZHCycleView.m */; };
+		F0E6A7B12064A3B200820887 /* ZHTopStoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6A7B02064A3B200820887 /* ZHTopStoryModel.m */; };
+		F0E6A7B52064EAC300820887 /* ZHHomePageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6A7B32064EAC300820887 /* ZHHomePageCell.m */; };
+		F0E6A7B62064EAC300820887 /* ZHHomePageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E6A7B42064EAC300820887 /* ZHHomePageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +121,13 @@
 		F0AB1C0B20620C890016A8AE /* UPSHttpNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPSHttpNetWorkTool.h; sourceTree = "<group>"; };
 		F0AB1C0D20620CB60016A8AE /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
 		F0AB1C0F20620E2F0016A8AE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F0E6A7AC2064908200820887 /* ZHCycleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCycleView.h; sourceTree = "<group>"; };
+		F0E6A7AD2064908200820887 /* ZHCycleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCycleView.m; sourceTree = "<group>"; };
+		F0E6A7AF2064A3B200820887 /* ZHTopStoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHTopStoryModel.h; sourceTree = "<group>"; };
+		F0E6A7B02064A3B200820887 /* ZHTopStoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHTopStoryModel.m; sourceTree = "<group>"; };
+		F0E6A7B22064EAC300820887 /* ZHHomePageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHHomePageCell.h; sourceTree = "<group>"; };
+		F0E6A7B32064EAC300820887 /* ZHHomePageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHHomePageCell.m; sourceTree = "<group>"; };
+		F0E6A7B42064EAC300820887 /* ZHHomePageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHHomePageCell.xib; sourceTree = "<group>"; };
 		F796EDF8B5E1F54011A232E7 /* Pods-ZhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhihuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -348,6 +359,8 @@
 			children = (
 				F0242027206358C60017636F /* ZHStoryModel.h */,
 				F0242028206358C60017636F /* ZHStoryModel.m */,
+				F0E6A7AF2064A3B200820887 /* ZHTopStoryModel.h */,
+				F0E6A7B02064A3B200820887 /* ZHTopStoryModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -355,6 +368,11 @@
 		F03990922061041C00728E7A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F0E6A7AC2064908200820887 /* ZHCycleView.h */,
+				F0E6A7AD2064908200820887 /* ZHCycleView.m */,
+				F0E6A7B22064EAC300820887 /* ZHHomePageCell.h */,
+				F0E6A7B32064EAC300820887 /* ZHHomePageCell.m */,
+				F0E6A7B42064EAC300820887 /* ZHHomePageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -646,6 +664,7 @@
 				F01C8B6A201866CC00F3038B /* LaunchScreen.storyboard in Resources */,
 				F03990B02061041C00728E7A /* MBProgressHUD.bundle in Resources */,
 				F01C8B67201866CC00F3038B /* Assets.xcassets in Resources */,
+				F0E6A7B62064EAC300820887 /* ZHHomePageCell.xib in Resources */,
 				F01C8B62201866CC00F3038B /* Main.storyboard in Resources */,
 				F024203A2063A6920017636F /* ZHLoginController.xib in Resources */,
 			);
@@ -732,6 +751,8 @@
 				F024202C20635BA70017636F /* ZHStoryModelTool.m in Sources */,
 				F024202F206381550017636F /* ZHLeftTableViewCell.m in Sources */,
 				F0AB1BFD2061EFC30016A8AE /* ZHHomePagecController.m in Sources */,
+				F0E6A7AE2064908200820887 /* ZHCycleView.m in Sources */,
+				F0E6A7B52064EAC300820887 /* ZHHomePageCell.m in Sources */,
 				F03990AE2061041C00728E7A /* MBProgressHUD.m in Sources */,
 				F01C8B5C201866CC00F3038B /* AppDelegate.m in Sources */,
 				F08751F020623829005BB9C2 /* ZHLanchImage.m in Sources */,
@@ -741,6 +762,7 @@
 				F0AB1C062061FE370016A8AE /* CommonUtils.m in Sources */,
 				F0AB1BFA2061EC7C0016A8AE /* ZHMainController.m in Sources */,
 				F01C8B6D201866CC00F3038B /* main.m in Sources */,
+				F0E6A7B12064A3B200820887 /* ZHTopStoryModel.m in Sources */,
 				F0242032206381BE0017636F /* ZHThemeModel.m in Sources */,
 				F0242029206358C60017636F /* ZHStoryModel.m in Sources */,
 				F01C8B65201866CC00F3038B /* ZhihuDaily.xcdatamodeld in Sources */,
