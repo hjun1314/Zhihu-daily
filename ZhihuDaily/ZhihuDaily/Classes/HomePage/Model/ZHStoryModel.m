@@ -10,13 +10,8 @@
 
 @implementation ZHStoryModel
 
-@synthesize id = _id;
-+ (NSDictionary *)mj_objectClassInArray{
-    
-        return @{@"stories" : [ZHStoryModel class],
-    //             @"top_stories" : [ZHStoryModel class],
-                 };
-    }
+//@synthesize id = _id;
+
 @end
 
 //@implementation SectionModel
@@ -24,8 +19,9 @@
 //+ (NSDictionary *)mj_objectClassInArray{
 //
 //    return @{@"stories" : [ZHStoryModel class],
-////             @"top_stories" : [ZHStoryModel class],
+//             @"top_stories" : [ZHStoryModel class],
 //             };
 //}
-
+//
 //@end
+

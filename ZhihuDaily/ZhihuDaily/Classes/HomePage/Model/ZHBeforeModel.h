@@ -1,13 +1,14 @@
 //
-//  ZHStoryModel.h
+//  ZHBeforeModel.h
 //  ZhihuDaily
 //
-//  Created by hjun on 2018/3/22.
+//  Created by hjun on 2018/3/28.
 //  Copyright © 2018年 hjun. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-@interface ZHStoryModel : NSObject
+
+@interface ZHBeforeModel : NSObject
 /** title 新闻标题 */
 @property (nonatomic,copy) NSString *title;
 /** images 图像地址 */
@@ -21,13 +22,3 @@
 @property (nonatomic, copy) NSString *date;
 
 @end
-
-//@interface SectionModel : NSObject
-///** date 日期 */
-//@property (nonatomic, copy) NSString *date;
-///** stories  当日新闻*/
-//@property (nonatomic, strong) NSArray *stories;
-///** top_stories  顶部新闻*/
-//@property (nonatomic, strong) NSArray *top_stories;
-//@end
-

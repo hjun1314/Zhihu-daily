@@ -24,10 +24,12 @@
 		F02420392063A6920017636F /* ZHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = F02420372063A6920017636F /* ZHLoginController.m */; };
 		F024203A2063A6920017636F /* ZHLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02420382063A6920017636F /* ZHLoginController.xib */; };
 		F024203D2063AC7F0017636F /* ZHThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F024203C2063AC7F0017636F /* ZHThemeController.m */; };
+		F0300D03206B6CC500D8E2E9 /* ZHBeforeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0300D02206B6CC500D8E2E9 /* ZHBeforeModel.m */; };
 		F03990AD2061041C00728E7A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F039909E2061041C00728E7A /* UIView+Extension.m */; };
 		F03990AE2061041C00728E7A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F03990A32061041C00728E7A /* MBProgressHUD.m */; };
 		F03990AF2061041C00728E7A /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F03990A62061041C00728E7A /* MBProgressHUD+MJ.m */; };
 		F03990B02061041C00728E7A /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F03990A72061041C00728E7A /* MBProgressHUD.bundle */; };
+		F05CDB25206B8DD700FE9102 /* ZHHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F05CDB24206B8DD700FE9102 /* ZHHeadView.m */; };
 		F08751EA2062367E005BB9C2 /* UIWindow+ZHExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = F08751E92062367E005BB9C2 /* UIWindow+ZHExpand.m */; };
 		F08751ED206236F3005BB9C2 /* ZHLaunchController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08751EC206236F3005BB9C2 /* ZHLaunchController.m */; };
 		F08751F020623829005BB9C2 /* ZHLanchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F08751EF20623829005BB9C2 /* ZHLanchImage.m */; };
@@ -38,6 +40,10 @@
 		F0AB1C062061FE370016A8AE /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1C042061FE370016A8AE /* CommonUtils.m */; };
 		F0AB1C0C20620C890016A8AE /* UPSHttpNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1C0A20620C880016A8AE /* UPSHttpNetWorkTool.m */; };
 		F0AB1C0E20620CB60016A8AE /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1C0D20620CB60016A8AE /* NullSafe.m */; };
+		F0C07800206C8A7200457892 /* myUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C077F9206C8A7200457892 /* myUILabel.m */; };
+		F0C07801206C8A7200457892 /* ParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C077FB206C8A7200457892 /* ParallaxHeaderView.m */; };
+		F0C07802206C8A7200457892 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C077FF206C8A7200457892 /* UIImage+ImageEffects.m */; };
+		F0DEE94D2066A2F90090CA76 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DEE94C2066A2F90090CA76 /* NSObject+Log.m */; };
 		F0E6A7AE2064908200820887 /* ZHCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6A7AD2064908200820887 /* ZHCycleView.m */; };
 		F0E6A7B12064A3B200820887 /* ZHTopStoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6A7B02064A3B200820887 /* ZHTopStoryModel.m */; };
 		F0E6A7B52064EAC300820887 /* ZHHomePageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6A7B32064EAC300820887 /* ZHHomePageCell.m */; };
@@ -94,6 +100,8 @@
 		F02420382063A6920017636F /* ZHLoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHLoginController.xib; sourceTree = "<group>"; };
 		F024203B2063AC7F0017636F /* ZHThemeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHThemeController.h; sourceTree = "<group>"; };
 		F024203C2063AC7F0017636F /* ZHThemeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHThemeController.m; sourceTree = "<group>"; };
+		F0300D01206B6CC500D8E2E9 /* ZHBeforeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHBeforeModel.h; sourceTree = "<group>"; };
+		F0300D02206B6CC500D8E2E9 /* ZHBeforeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHBeforeModel.m; sourceTree = "<group>"; };
 		F039909C2061041C00728E7A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		F039909E2061041C00728E7A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		F03990A32061041C00728E7A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
@@ -101,6 +109,8 @@
 		F03990A52061041C00728E7A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		F03990A62061041C00728E7A /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		F03990A72061041C00728E7A /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		F05CDB23206B8DD700FE9102 /* ZHHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHHeadView.h; sourceTree = "<group>"; };
+		F05CDB24206B8DD700FE9102 /* ZHHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHHeadView.m; sourceTree = "<group>"; };
 		F08751E82062367E005BB9C2 /* UIWindow+ZHExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+ZHExpand.h"; sourceTree = "<group>"; };
 		F08751E92062367E005BB9C2 /* UIWindow+ZHExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+ZHExpand.m"; sourceTree = "<group>"; };
 		F08751EB206236F3005BB9C2 /* ZHLaunchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLaunchController.h; sourceTree = "<group>"; };
@@ -121,6 +131,14 @@
 		F0AB1C0B20620C890016A8AE /* UPSHttpNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPSHttpNetWorkTool.h; sourceTree = "<group>"; };
 		F0AB1C0D20620CB60016A8AE /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
 		F0AB1C0F20620E2F0016A8AE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F0C077F8206C8A7200457892 /* myUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myUILabel.h; sourceTree = "<group>"; };
+		F0C077F9206C8A7200457892 /* myUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myUILabel.m; sourceTree = "<group>"; };
+		F0C077FB206C8A7200457892 /* ParallaxHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxHeaderView.m; sourceTree = "<group>"; };
+		F0C077FC206C8A7200457892 /* ParallaxHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxHeaderView.h; sourceTree = "<group>"; };
+		F0C077FE206C8A7200457892 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		F0C077FF206C8A7200457892 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		F0DEE94B2066A2F90090CA76 /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
+		F0DEE94C2066A2F90090CA76 /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
 		F0E6A7AC2064908200820887 /* ZHCycleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCycleView.h; sourceTree = "<group>"; };
 		F0E6A7AD2064908200820887 /* ZHCycleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCycleView.m; sourceTree = "<group>"; };
 		F0E6A7AF2064A3B200820887 /* ZHTopStoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHTopStoryModel.h; sourceTree = "<group>"; };
@@ -226,6 +244,7 @@
 		F03990832061041C00728E7A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F0C077EF206C853600457892 /* 3rd */,
 				F03990842061041C00728E7A /* LeftSideDrawer */,
 				F03990892061041C00728E7A /* ThemePage */,
 				F039908E2061041C00728E7A /* HomePage */,
@@ -359,6 +378,8 @@
 			children = (
 				F0242027206358C60017636F /* ZHStoryModel.h */,
 				F0242028206358C60017636F /* ZHStoryModel.m */,
+				F0300D01206B6CC500D8E2E9 /* ZHBeforeModel.h */,
+				F0300D02206B6CC500D8E2E9 /* ZHBeforeModel.m */,
 				F0E6A7AF2064A3B200820887 /* ZHTopStoryModel.h */,
 				F0E6A7B02064A3B200820887 /* ZHTopStoryModel.m */,
 			);
@@ -373,6 +394,8 @@
 				F0E6A7B22064EAC300820887 /* ZHHomePageCell.h */,
 				F0E6A7B32064EAC300820887 /* ZHHomePageCell.m */,
 				F0E6A7B42064EAC300820887 /* ZHHomePageCell.xib */,
+				F05CDB23206B8DD700FE9102 /* ZHHeadView.h */,
+				F05CDB24206B8DD700FE9102 /* ZHHeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -443,6 +466,8 @@
 		F039909A2061041C00728E7A /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F0DEE94B2066A2F90090CA76 /* NSObject+Log.h */,
+				F0DEE94C2066A2F90090CA76 /* NSObject+Log.m */,
 				F08751E82062367E005BB9C2 /* UIWindow+ZHExpand.h */,
 				F08751E92062367E005BB9C2 /* UIWindow+ZHExpand.m */,
 			);
@@ -540,6 +565,43 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F0C077EF206C853600457892 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				F0C077FD206C8A7200457892 /* AeroEffect */,
+				F0C077F7206C8A7200457892 /* myUILabel */,
+				F0C077FA206C8A7200457892 /* ParallaxHeaderView */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		F0C077F7206C8A7200457892 /* myUILabel */ = {
+			isa = PBXGroup;
+			children = (
+				F0C077F8206C8A7200457892 /* myUILabel.h */,
+				F0C077F9206C8A7200457892 /* myUILabel.m */,
+			);
+			path = myUILabel;
+			sourceTree = "<group>";
+		};
+		F0C077FA206C8A7200457892 /* ParallaxHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				F0C077FB206C8A7200457892 /* ParallaxHeaderView.m */,
+				F0C077FC206C8A7200457892 /* ParallaxHeaderView.h */,
+			);
+			path = ParallaxHeaderView;
+			sourceTree = "<group>";
+		};
+		F0C077FD206C8A7200457892 /* AeroEffect */ = {
+			isa = PBXGroup;
+			children = (
+				F0C077FE206C8A7200457892 /* UIImage+ImageEffects.h */,
+				F0C077FF206C8A7200457892 /* UIImage+ImageEffects.m */,
+			);
+			path = AeroEffect;
 			sourceTree = "<group>";
 		};
 		F9D1DF0CE83182445B00907C /* Frameworks */ = {
@@ -742,10 +804,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0C07801206C8A7200457892 /* ParallaxHeaderView.m in Sources */,
 				F03990AD2061041C00728E7A /* UIView+Extension.m in Sources */,
 				F0AB1C012061F4630016A8AE /* ZHLeftController.m in Sources */,
 				F02420392063A6920017636F /* ZHLoginController.m in Sources */,
 				F08751EA2062367E005BB9C2 /* UIWindow+ZHExpand.m in Sources */,
+				F0300D03206B6CC500D8E2E9 /* ZHBeforeModel.m in Sources */,
 				F0242035206395DC0017636F /* ZHThemeTool.m in Sources */,
 				F024203D2063AC7F0017636F /* ZHThemeController.m in Sources */,
 				F024202C20635BA70017636F /* ZHStoryModelTool.m in Sources */,
@@ -756,14 +820,18 @@
 				F03990AE2061041C00728E7A /* MBProgressHUD.m in Sources */,
 				F01C8B5C201866CC00F3038B /* AppDelegate.m in Sources */,
 				F08751F020623829005BB9C2 /* ZHLanchImage.m in Sources */,
+				F0DEE94D2066A2F90090CA76 /* NSObject+Log.m in Sources */,
 				F08751ED206236F3005BB9C2 /* ZHLaunchController.m in Sources */,
 				F03990AF2061041C00728E7A /* MBProgressHUD+MJ.m in Sources */,
 				F0AB1C0C20620C890016A8AE /* UPSHttpNetWorkTool.m in Sources */,
 				F0AB1C062061FE370016A8AE /* CommonUtils.m in Sources */,
 				F0AB1BFA2061EC7C0016A8AE /* ZHMainController.m in Sources */,
 				F01C8B6D201866CC00F3038B /* main.m in Sources */,
+				F05CDB25206B8DD700FE9102 /* ZHHeadView.m in Sources */,
 				F0E6A7B12064A3B200820887 /* ZHTopStoryModel.m in Sources */,
+				F0C07800206C8A7200457892 /* myUILabel.m in Sources */,
 				F0242032206381BE0017636F /* ZHThemeModel.m in Sources */,
+				F0C07802206C8A7200457892 /* UIImage+ImageEffects.m in Sources */,
 				F0242029206358C60017636F /* ZHStoryModel.m in Sources */,
 				F01C8B65201866CC00F3038B /* ZhihuDaily.xcdatamodeld in Sources */,
 				F0AB1C0E20620CB60016A8AE /* NullSafe.m in Sources */,
